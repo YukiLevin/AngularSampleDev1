@@ -1,0 +1,79 @@
+<section>
+    <div class="container">
+        <main>
+            <p class="main-title">Insert ToDo</p>
+            <form action="#" method="post">
+                <table class="table-info" align="center">
+                    <tr>
+                        <td>
+                            <p><label for="name-field">ToDo</label></p>
+                        </td><td>
+                            <input type="text" name="name" id="name-field" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Content</p>
+                        </td>
+                        <td>
+                            <ul class="check-input">
+                                <li>
+                                    <input type="checkbox" name="flag" id="c1" value="1" checked>
+                                    <label for="c1">Develop</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="flag" id="c2" value="2">
+                                    <label for="c2">QA</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="flag" id="c3" value="3">
+                                    <label for="c3">Bug</label>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Status</p>
+                        </td>
+                        <td>
+                            <ul class="radio-input">
+                                <li>
+                                    <input type="radio" name="status" id="r1" value="1" checked>
+                                    <label for="r1">In Progress</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="status" id="r2" value="2">
+                                    <label for="r2">Processing</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="status" id="r3" value="3">
+                                    <label for="r3">Complete</label>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><label for="date">End Date</label></p>
+                        </td>
+                        <td>
+                            <select name="date" id="select">
+                                <option value="" selected>Date</option>
+                                <option value="01">1Day</option>
+                                <option value="02">1Week</option>
+                                <option value="03">1Month</option>
+                                <option value="04">1Year</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p class="submit-p"><input type="submit" name="submit" value="Registration" id="submit"></p>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+    </div>
+</section>

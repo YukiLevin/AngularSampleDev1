@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+}
+h1 {
+    margin: 0;
+}
+.container {
+    margin: 0 auto 0 auto;
+    max-width: 1400px;
+}
+section .container {
+    display: flex;
+    flex-flow: column;
+}
+
+.header-inner {
+    padding: 10px 10px 0 10px;
+    background: #c84040;
+    overflow: hidden;
+    color: #fff;
+}
+.logo {
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+main {
+    margin-top: 110px;
+    padding: 20px 10px 20px 10px;
+    background:#efefef;
+    height: 600px;
+}
+aside {
+    margin-top: 110px;
+}
+.sidebar {
+    padding: 20px 10px 20px 10px;
+    background: #c0f5b9;
+}
+.footer-inner {
+    padding: 20px 16px 10px 16px;
+    background: #c84040;
+    color: #fff;
+}
+.hamburger {
+    border: none;
+    width: 50px;
+    height: 50px;
+    background: url(hamburger.png) no-repeat;
+    background-size: contain;
+}
+.navbar {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #565656;
+}
+.navbar li a {
+    display: block;
+    padding: 10px 8px;
+    color: #fff;
+    text-decoration: none;
+}
+.navbar li a:hover {
+    background: #fff;
+    color: #565656;
+}
+.check-input {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.check-input li {
+    display: inline;
+}
+.radio-input {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.radio-input li {
+    display: inline;
+}
+input[type="submit"] {
+    border: 1px solid #0086f9;
+    border-radius: 6px;
+    padding: 12px 48px;
+    font-size: 16px;
+    background: linear-gradient(0deg, #0086f9, #b6d6f7);
+    color: #fff;
+    font-weight: bold;
+}
+input[type="submit"]:hover {
+    background: linear-gradient(0deg,#2894f9, #d2e4f7);
+}
+input[type="submit"]:active {
+    background: linear-gradient(0deg, #2894f9, #d2e4f7)
+}
+.submit-p {
+    text-align: center;
+}
+.table-info tr:nth-child(even) {
+    background: #65abda;
+}
+.search {
+    text-align: center;
+}
+.search input[type="text"] {
+    width: 500px; 
+}
+
+@media only screen and (min-width: 768px) {
+    .position-lock {
+        position: fixed;
+        top: 0;
+        left: 0; 
+        width: 100%;
+    }
+    section .container {
+        flex-flow: row;
+    }
+    main {
+        flex: 1 1 auto;
+    }
+    .sidebar {
+        flex: 0 0 340px;
+    }
+    .hamburger {
+        display: none;
+    }
+    .navbar{
+        display: flex !important;
+        justify-content: space-around;
+    }
+}
+
+body {
+    color: #444;
+}
+main p:last-chile {
+    margin-bottom: 0;
+}
+.main-title {
+    margin: 0;
+}
+.copyright {
+    margin:0;
+}
