@@ -2,32 +2,40 @@
     <div class="container">
         <main>
             <p class="main-title">Search ToDo</p>
-            <form action="#" method="post">
-                <p class="search"><label for="name-field">ToDo</label>
-                <input type="text" name="name" id="name-field" required>
-                <span class="submit-p"><input type="submit" name="submit" value="Registration" id="submit"></span></p>
+            <form>
+                <p class="search">
+                <label for="name-field">ToDo</label>
+                <input type="text" name="todoname" id="name-field" [(ngModel)]="todoname" >
+                <span class="submit-p">
+                <input type="submit" name="todosubmit" value="Registration" id="submit" (click)="onclick()">
+                </span>
+                </p>
                 <br>
-                <table class="table-info" align="center">
-                    <tr>
-                        <th>#</th>
-                        <th>ToDo</th>
-                        <th>Flag</th>
-                        <th>Status</th>
-                        <th>End Date</th>
-                        <th>Update</th>
-                        <th>Delete</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
             </form>
+            <table class="table-info" align="center">
+                <tr>
+                    <th>#</th>
+                    <th>ToDo</th>
+                    <th>Flag</th>
+                    <th>Status</th>
+                    <th>End Date</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                <tr *ngFor="let row of result">
+                    <td>{{row.id}}</td>
+                    <td>{{row.name}}</td>
+                    <td>{{row.flag}}</td>
+                    <td>{{row.status}}</td>
+                    <td>{{row.update}}</td>
+                    <td>
+                        <input type="button" name="update" value="update" id="update">
+                    </td>
+                    <td>
+                        <input type="button" name="delete" value="insert" id="insert">
+                    </td>
+                </tr>
+            </table>
         </main>
     </div>
 </section>

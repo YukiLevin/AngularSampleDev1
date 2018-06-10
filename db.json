@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "patapata",
+      "flag": "1",
+      "status": "3",
+      "enddate": "2019/05/30"
+    },
+    {
+      "id": 2,
+      "name": "munimuni",
+      "flag": "2",
+      "status": "1",
+      "enddate": "2017/05/30"
+    },
+    {
+      "id": 3,
+      "name": "kupukupu",
+      "flag": "3",
+      "status": "2",
+      "enddate": "2018/05/30"
+    },
+    {
+      "id": 4,
+      "name": "Study Angular",
+      "flag": "1",
+      "status": "1",
+      "enddate": "2018/06/30"
+    }
+  ]
+}
+
